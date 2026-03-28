@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -7,37 +7,93 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>HOTEL TECH SOLUCION DDJW</h1>
-        <ul>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="logo">HOTEL TECH SOLUCION DDJW</h1>
+
+        <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+
+        <button id="themeToggle" class="theme-btn">Modo oscuro</button>
       </nav>
     </header>
 
     <main>
-      <section id="inicio">
-        <h2>Gestión y administración hotelera</h2>
+      <section class="hero" id="inicio">
+        <div class="hero-text">
+          <p class="tagline">Tecnología inteligente para hoteles modernos</p>
+          <h2>Gestión hotelera más rápida, organizada y eficiente</h2>
+          <p>
+            HOTEL TECH SOLUCION DDJW ofrece herramientas digitales para mejorar
+            reservas, administración de habitaciones, control de clientes y
+            procesos operativos en hoteles.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#servicios" class="btn primary-btn">Ver servicios</a>
+            <button class="btn secondary-btn" onclick="mostrarMensaje()">
+              Conocer más
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="img/hotel-tech.jpeg"
+            alt="Sistema digital de administración y gestión hotelera en una pantalla"
+          />
+        </div>
+      </section>
+
+      <section class="services" id="servicios">
+        <h2>Nuestros servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Gestión de reservas</h3>
+            <p>
+              Control y seguimiento de reservas en tiempo real para una mejor
+              organización hotelera.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Administración de habitaciones</h3>
+            <p>
+              Supervisa disponibilidad, estado y ocupación de habitaciones de
+              forma eficiente.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Control de clientes</h3>
+            <p>
+              Organiza la información de los huéspedes y mejora la experiencia
+              del servicio.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits" id="beneficios">
+        <h2>Beneficios de nuestra solución</h2>
         <p>
-          Ofrecemos soluciones tecnológicas para optimizar reservas,
-          habitaciones, clientes y procesos administrativos en hoteles.
+          Nuestra plataforma ayuda a optimizar procesos, reducir errores y
+          mejorar la toma de decisiones en la gestión hotelera.
         </p>
-        <button onclick="mostrarMensaje()">Conocer más</button>
       </section>
 
-      <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Software, control y apoyo digital para la operación hotelera.</p>
-      </section>
-
-      <section id="contacto">
+      <section class="contact" id="contacto">
         <h2>Contacto</h2>
         <p>Correo: contacto@hoteltechddjw.com</p>
+        <p>Teléfono: +57 300 000 0000</p>
       </section>
     </main>
+
+    <button id="btnTop" title="Volver arriba">↑</button>
 
     <script src="js/script.js"></script>
   </body>
